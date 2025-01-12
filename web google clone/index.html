@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Google Clone</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header_left">
+            <a href="https://about.google/">About</a>
+            <a href="https://store.google.com/">Store</a>
+        </div>
+        <div class="header_right">
+            <a href="https://mail.google.com/">Gmail</a>
+            <a href="https://www.google.com/imghp">Images</a>
+            <span class="material-symbols-outlined header_app" aria-label="Apps">
+                apps
+            </span>
+            <span class="material-symbols-outlined" aria-label="Account">
+                account_circle
+            </span>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <main class="mainBody">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="Google logo">
+        <div class="search">
+            <!-- Form to submit search query to Google -->
+            <form action="https://www.google.com/search" method="GET">
+                <div class="search_input">
+                    <span class="material-symbols-outlined" aria-label="Search icon">
+                        search
+                    </span>
+                    <!-- Input field for search query -->
+                    <input type="text" name="q" placeholder="Search Google" aria-label="Search field" required />
+                    <span class="material-symbols-outlined" aria-label="Microphone">
+                        mic
+                    </span>
+                </div>
+                <div class="search_buttons">
+                    <button type="submit">Google Search</button>
+                    <button type="button" onclick="window.location.href='https://www.google.com/doodles';">
+                        I'm Feeling Lucky
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- main body end -->
+</body>
+</html>
